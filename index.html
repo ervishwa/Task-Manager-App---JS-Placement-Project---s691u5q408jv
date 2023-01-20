@@ -4,11 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="App.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Fraunces:opsz,wght@9..144,100&family=Montserrat:wght@100&family=Overpass:wght@400;700&display=swap');
+    </style>
+        
+
 </head>
 <body>
-    <div>
-        king kong
+    <nav>
+        <ul>
+            <li><img src="https://img.freepik.com/free-vector/hand-drawn-business-planning-with-task-list_23-2149164275.jpg?w=2000"> Task Manager</li>
+        </ul>
+    </nav>
+    <div class="add">
+        <input type="text" id="input" placeholder="Task Name">
+        <button type="submit" id="addtask">Add Task</button>
     </div>
+    <div class="container">
+        <section class="section" id="open">
+            <div class="header">
+                <h1>OPEN</h1>
+            </div>
+            <hr>
+            <div class="allTasks scroll hight">
+            </div>
+        </section>
+
+        <section class="section" id="progress">
+            <div class="header">
+                <h1>IN PROGRESS</h1>
+            </div>
+            <hr>
+            <div class="allProgress scroll hight">
+            </div>
+        </section>
+
+        <section class="section" id="review">
+            <div class="header">
+                <h1>IN REVIEW</h1>
+            </div>
+            <hr>
+            <div class="allReview scroll hight">
+            </div>
+        </section>
+
+        <section class="section" id="done">
+            <div class="header">
+                <h1>DONE</h1>
+            </div>
+            <hr>
+            <div class="allDone scroll hight">
+            </div>
+        </section>
+
+    </div>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Task Description</h1>
+            <textarea type="text" id="description" placeholder="Write description.."></textarea>
+            <br>
+            <button id="saveBtn" onclick="save()">Save</button>
+            <div class="close-btn" onclick="togglePopup()"><img id="cross"   src="https://freepngimg.com/thumb/red_cross_mark/1-2-red-cross-mark-free-png-image.png"></div>
+        </div>
+    </div>
+    
+   
+   
+
 </body>
 </html>
