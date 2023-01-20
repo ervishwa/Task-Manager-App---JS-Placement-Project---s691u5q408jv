@@ -1,4 +1,4 @@
-**Task Manager
+Task Manager
 
 
 
@@ -29,4 +29,4 @@ Version 0.1.0
             
  Author
 
-**VISHWJEET THAKUR
+VISHWJEET THAKUR
