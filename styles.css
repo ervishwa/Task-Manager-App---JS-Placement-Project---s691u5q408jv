@@ -14,6 +14,7 @@ body {
     display: flex;
     justify-content: center;
     background: #439A97;
+    flex-wrap: wrap;
   }
   nav {
     color: white;
@@ -239,3 +240,30 @@ body {
   #cross{
     height:1.8rem ;
   }
+
+  @media only screen and (max-width: 600px) {
+    
+    .add{
+      margin-left: 0;
+      margin: 7px;
+    }
+    #addtask {
+      margin-left: 0;
+    }
+
+    .container{
+      gap: 27px;
+      overflow: scroll;
+    }
+    .section{
+      width: 38.7vw;
+      height: 66vw;
+    }
+
+    #review , #done {
+      margin-top:-188px;
+    }
+  }
+
+/* ================================================================= */
+
