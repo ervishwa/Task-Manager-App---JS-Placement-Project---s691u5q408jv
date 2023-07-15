@@ -20,6 +20,8 @@ body {
     width: 100vw;
     height: 50px;
     background-color: #BCEAD5;
+    position: sticky;
+    top: 0;
   }
   li {
     list-style-type: none;
