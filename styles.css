@@ -3,13 +3,12 @@
   font-family: 'Dancing Script', cursive;
 }
 body {
-    position: fixed;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
    }
   .container {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -241,29 +240,52 @@ body {
     height:1.8rem ;
   }
 
+  /* media query for phones*/
+
   @media only screen and (max-width: 600px) {
     
-    .add{
-      margin-left: 0;
-      margin: 7px;
-    }
-    #addtask {
-      margin-left: 0;
-    }
-
-    .container{
-      gap: 27px;
-      overflow: scroll;
-    }
+   
     .section{
-      width: 38.7vw;
-      height: 66vw;
+     min-height: 255px;
+    min-width: 177px;
     }
 
-    #review , #done {
-      margin-top:-188px;
-    }
+    
+
+
   }
 
-/* ================================================================= */
+  /*for smaller devices*/
+
+ @media only screen and (max-width:375px){
+ .add{
+  margin-left: 0;
+ }
+ li{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 202px;
+    margin-top: 5px;
+    font-size: 32px;
+ }
+ #input{
+  width: 221px;
+ }
+ #addtask{
+  margin-left: 18px;
+ }
+ }
+  /*for tablets*/
+ @media only screen and (max-width:908px) and (min-width : 600px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section{
+    min-height: 255px;
+   min-width: 177px;
+   }
+ }
 
